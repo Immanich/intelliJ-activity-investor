@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="427.0" prefWidth="751.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="10.0" layoutY="14.0" prefHeight="383.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="7.0" layoutY="-3.0" prefHeight="35.0" prefWidth="171.0" text="Name">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <TextField fx:id="nameField" layoutX="8.0" layoutY="35.0" prefHeight="35.0" prefWidth="184.0" />
+            <TextField fx:id="phoneField" layoutX="8.0" layoutY="192.0" prefHeight="35.0" prefWidth="184.0" />
+            <TextField fx:id="addressField" layoutX="8.0" layoutY="117.0" prefHeight="35.0" prefWidth="184.0" />
+            <Label layoutX="7.0" layoutY="82.0" prefHeight="35.0" prefWidth="171.0" text="Address">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="7.0" layoutY="157.0" prefHeight="35.0" prefWidth="171.0" text="Phone">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <TextField fx:id="investmentField" layoutX="8.0" layoutY="269.0" prefHeight="35.0" prefWidth="184.0" />
+            <Label layoutX="7.0" layoutY="234.0" prefHeight="35.0" prefWidth="171.0" text="Investment">
+               <font>
+                  <Font size="23.0" />
+               </font>
+            </Label>
+            <Button fx:id="submitBtn" layoutX="8.0" layoutY="341.0" mnemonicParsing="false" onAction="#submit" prefHeight="35.0" prefWidth="184.0" text="Submit">
+               <font>
+                  <Font size="19.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+      <TableView fx:id="table" layoutX="219.0" layoutY="13.0" prefHeight="320.0" prefWidth="515.0">
+         <columns>
+            <TableColumn prefWidth="75.0" text="Name" />
+            <TableColumn prefWidth="75.0" text="Address" />
+            <TableColumn prefWidth="75.0" text="Phone" />
+            <TableColumn prefWidth="75.0" text="Investment" />
+            <TableColumn prefWidth="75.0" text="Divident" />
+         </columns>
+      </TableView>
+      <Label layoutX="215.0" layoutY="352.0" prefHeight="35.0" prefWidth="304.0" text="Total Investment">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="totalLabel" layoutX="563.0" layoutY="352.0" prefHeight="35.0" prefWidth="171.0" text="...">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
